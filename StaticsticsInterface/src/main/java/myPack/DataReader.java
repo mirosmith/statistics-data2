@@ -7,8 +7,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /** 
- * Nastavuje nazev souboru, ze ktereho
- * se budou nacitat data 
+ * This is parent class, which sets filename,
+ *  and allows read the input file  
  */
 public class DataReader {
 	
@@ -22,8 +22,7 @@ public class DataReader {
 		return fileName;	
 	}
 
-	// 
-	//ze souboru vytvari seznam (List) slov
+	// reads file and creates list of words	
 	public List<String> readFile(Path path) {		
 		
 		List<String> listOfWords = new LinkedList<String>();
@@ -38,7 +37,7 @@ public class DataReader {
 				
 				for (String s : lineArray) {					
 					
-					// vymaze interpunkcni znaky 
+					// deletes white characters 
 					s = s.replaceAll("\\W", "").toLowerCase().trim();					
 					
 					if (s.isEmpty()) {

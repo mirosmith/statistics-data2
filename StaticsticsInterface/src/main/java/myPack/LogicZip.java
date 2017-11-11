@@ -14,6 +14,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**  
+ * Subclass which creates statistics (Map) of intput ZIP file
+ */
 public class LogicZip extends DataReader implements Logicable {	
 
 	public LogicZip(String fileName) {

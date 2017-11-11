@@ -6,8 +6,8 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Map;
 
-/**  
- * Umoznuje vypsat vysledky do konzole nebo do souboru
+/**   
+ * Allows write the results to to console or output text file 
  */
 public class Presentation {
 
@@ -17,7 +17,7 @@ public class Presentation {
 		this.logic = logic;
 	}
 
-	// vystup do konzole
+	// output to console
 	public void outputConsole() {
 
 		if (logic == null) {
@@ -40,7 +40,7 @@ public class Presentation {
 
 	}
 
-	// vystup do souboru
+	// output to text file
 	public void outputFile(String outputFileName) {
 
 		if (logic == null) {

@@ -5,12 +5,14 @@ import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
+/**
+ * Singleton class which allows to check the input and output files
+ */
 public final class Utility {	
 	
 	private Utility() {}
 	
-	// metoda, ktera zkontroluje spravny nazev a existenci vstupniho souboru
-	// nazev musi mit koncovku ".txt"	
+	// method checks correctness and existence of input file	
 	public static boolean inputFileCheck(String file) {
 		
 		if (file == null || file.isEmpty()) {
@@ -40,9 +42,8 @@ public final class Utility {
 		return true;
 	}
 
-	// metoda, ktera zkontroluje spravny nazev souboru
-	// nazev musi mit koncovku ".txt"
-	// nazev musi zacinat pismenem
+	// method checks correctness of output file
+	// output file must start with a letter and must end with ".txt"	 
 	public static boolean outputFileCheck(String fName) {
 
 		if (fName == null) {

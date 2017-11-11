@@ -5,20 +5,20 @@ import utilityPackage.Utility;
 public class MainApp {
 	
 	/**	 
-	 * Pokud je program spusten s vstupnim i vystupnim souborem, vysledky se vypisou do souboru.
-	 * Pokud je program spusten pouze s vstupnim souborem, vysledky se vypisou do konzole.
+	 * If you run the program with input and output parameters, the results will be written to 
+	 * the output text file
+	 * 
+	 * If you run the program only with input parameter, the results will be written to 
+	 * the console	 
 	 */
 	
 	public static boolean isZip(String s) {		
 		return (s.endsWith(".zip"));		
 	}
 
-	public static void main(String[] args) {	
+	public static void main(String[] args) {			
 		
-		String[] argss = new String[1];
-		argss[0] = "test8.txt";
-		
-		if (argss.length == 2) {
+		if (args.length == 2) {
 			
 			String input = args[0];
 			String output = args[1];
@@ -40,9 +40,9 @@ public class MainApp {
 			}
 			
 		}
-		else if (argss.length == 1) {
+		else if (args.length == 1) {
 			
-			String input = argss[0]; 	
+			String input = args[0]; 	
 			
 			if (Utility.inputFileCheck(input)) {
 				

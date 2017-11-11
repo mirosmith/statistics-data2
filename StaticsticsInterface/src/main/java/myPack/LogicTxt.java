@@ -6,6 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**  
+ * Subclass which creates statistics (Map) of intput TEXT file
+ */
 public class LogicTxt extends DataReader implements Logicable {
 
 	public LogicTxt(String fileName) {
